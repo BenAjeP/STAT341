@@ -1,0 +1,56 @@
+
+R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.79 (8238) x86_64-apple-darwin20]
+
+[History restored from /Users/benajeparker/.Rapp.history]
+
+> variable1 <-c(1,23,4,5,6,7,8,9,10,1900)
+> 
+> 
+> mean(variable1)
+[1] 197.3
+> median(variable1)
+[1] 7.5
+> sd(variable1)
+[1] 598.2965
+> install.packages('DeskTools')
+--- Please select a CRAN mirror for use in this session ---
+Warning message:
+package ‘DeskTools’ is not available for this version of R
+
+A version of this package for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages 
+> library(DeskTools)
+Error in library(DeskTools) : there is no package called ‘DeskTools’
+> 
+> mode(variable1)
+[1] "numeric"
+> min(variable1)
+[1] 1
+> max(variable1)
+[1] 1900
+> var(variable1)
+[1] 357958.7
+> Mode(variable1'0')
+Error: unexpected string constant in "Mode(variable1'0'"
+> Mode(variable1)
+Error in Mode(variable1) : could not find function "Mode"
+> 
