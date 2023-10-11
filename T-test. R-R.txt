@@ -1,0 +1,74 @@
+
+R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.79 (8238) x86_64-apple-darwin20]
+
+[History restored from /Users/benajeparker/.Rapp.history]
+
+> x <- rnorm(10)
+> y <- rnorm(10)
+> x
+ [1] -1.36133115 -1.33710403  0.08864105 -0.29696742  0.63465190  1.63829584
+ [7]  0.12973836  0.88365076 -1.00923105  0.92045491
+> pts = seq(-4.5,4.5,length=100)
+> pts
+  [1] -4.50000000 -4.40909091 -4.31818182 -4.22727273 -4.13636364 -4.04545455
+  [7] -3.95454545 -3.86363636 -3.77272727 -3.68181818 -3.59090909 -3.50000000
+ [13] -3.40909091 -3.31818182 -3.22727273 -3.13636364 -3.04545455 -2.95454545
+ [19] -2.86363636 -2.77272727 -2.68181818 -2.59090909 -2.50000000 -2.40909091
+ [25] -2.31818182 -2.22727273 -2.13636364 -2.04545455 -1.95454545 -1.86363636
+ [31] -1.77272727 -1.68181818 -1.59090909 -1.50000000 -1.40909091 -1.31818182
+ [37] -1.22727273 -1.13636364 -1.04545455 -0.95454545 -0.86363636 -0.77272727
+ [43] -0.68181818 -0.59090909 -0.50000000 -0.40909091 -0.31818182 -0.22727273
+ [49] -0.13636364 -0.04545455  0.04545455  0.13636364  0.22727273  0.31818182
+ [55]  0.40909091  0.50000000  0.59090909  0.68181818  0.77272727  0.86363636
+ [61]  0.95454545  1.04545455  1.13636364  1.22727273  1.31818182  1.40909091
+ [67]  1.50000000  1.59090909  1.68181818  1.77272727  1.86363636  1.95454545
+ [73]  2.04545455  2.13636364  2.22727273  2.31818182  2.40909091  2.50000000
+ [79]  2.59090909  2.68181818  2.77272727  2.86363636  2.95454545  3.04545455
+ [85]  3.13636364  3.22727273  3.31818182  3.40909091  3.50000000  3.59090909
+ [91]  3.68181818  3.77272727  3.86363636  3.95454545  4.04545455  4.13636364
+ [97]  4.22727273  4.31818182  4.40909091  4.50000000
+> plot(pts,dt(pts,df=9),col='red',type='l')​
+Error: unexpected input in "plot(pts,dt(pts,df=9),col='red',type='l')​"
+> plot (pts, dt(pts,df=9), col='red', type='l')​
+Error: unexpected input in "plot (pts, dt(pts,df=9), col='red', type='l')​"
+> plot(pts,dt(pts,df=9),col='red',type'l')
+Error: unexpected string constant in "plot(pts,dt(pts,df=9),col='red',type'l'"
+> plot(pts,dt(pts,df=9),col='red',type='l')
+> lines(denslinesity(x), col='green')
+Error in denslinesity(x) : could not find function "denslinesity"
+>  lines(density(x), col='green')
+> 
+> lines(density(y), col='blue')
+> ttest=t.test(x,y)
+> ttest
+
+	Welch Two Sample t-test
+
+data:  x and y
+t = 0.42583, df = 17.546, p-value = 0.6754
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.7152097  1.0779974
+sample estimates:
+  mean of x   mean of y 
+ 0.02907992 -0.15231396 
+
+> 
