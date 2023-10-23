@@ -1,0 +1,37 @@
+
+R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.79 (8238) x86_64-apple-darwin20]
+
+[History restored from /Users/benajeparker/.Rapp.history]
+
+> dbinom(4, size=12, prob=0.2)
+[1] 0.1328756
+> pbinom(4, size=12, prob=0.2)
+[1] 0.9274445
+> ppois(16, lambda=12)
+[1] 0.898709
+> ppois(16, lambda=12, lower=FALSE)
+[1] 0.101291
+> runif(10, min=1, max=3)
+ [1] 1.556914 2.630055 1.617408 1.855161 2.390155 1.387606 1.213985 1.690127 1.808422
+[10] 1.217766
+> qchisq(.95, df=7)
+[1] 14.06714
+> 
