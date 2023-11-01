@@ -1,0 +1,46 @@
+
+R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.79 (8238) x86_64-apple-darwin20]
+
+[Workspace restored from /Users/benajeparker/.RData]
+[History restored from /Users/benajeparker/.Rapp.history]
+
+> data_frame <- read.csv("https://goo.gl/j6lRXD")
+> table(data_frame$treatment, data_frame$improvement)
+             
+              improved not-improved
+  not-treated       26           29
+  treated           35           15
+> head(data_frame)
+  id   treatment  improvement
+1  1     treated     improved
+2  2     treated     improved
+3  3 not-treated     improved
+4  4     treated     improved
+5  5     treated not-improved
+6  6     treated not-improved
+> chisq.test(data_frame$treatment, data_frame$improvement, correct=FALSE)
+
+	Pearson's Chi-squared test
+
+data:  data_frame$treatment and data_frame$improvement
+X-squared = 5.5569, df = 1, p-value = 0.01841
+
+> 
