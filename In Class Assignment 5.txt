@@ -1,0 +1,39 @@
+
+R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.79 (8238) x86_64-apple-darwin20]
+
+[Workspace restored from /Users/benajeparker/.RData]
+[History restored from /Users/benajeparker/.Rapp.history]
+
+> data_frame <-read.csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv")
+>    chisq.test(data_frame$new_cases, data_frame$icu_patients_per_million, correct=FALSE)
+
+	Pearson's Chi-squared test
+
+data:  data_frame$new_cases and data_frame$icu_patients_per_million
+X-squared = 186153995, df = 131323400, p-value < 2.2e-16
+
+Warning message:
+In chisq.test(data_frame$new_cases, data_frame$icu_patients_per_million,  :
+  Chi-squared approximation may be incorrect
+
+> 
+> 
+> 
